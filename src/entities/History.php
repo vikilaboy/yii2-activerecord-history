@@ -1,13 +1,13 @@
 <?php
 
-namespace vikilaboy\activerecord\history\entities;
+namespace bupy7\activerecord\history\entities;
 
 use Yii;
 use yii\base\Object;
 
 /**
  * Entity of collection history changes active record model.
- * @author Belosludcev Vasilij <https://github.com/vikilaboy>
+ * @author Belosludcev Vasilij <https://github.com/bupy7>
  * @since 1.0.0
  */
 class History extends Object

@@ -17,7 +17,7 @@
   "authors": [
     {
       "name": "Vasilij Belosludcev",
-      "email": "vikilaboy65@gmail.com"
+      "email": "bupy765@gmail.com"
     },
     {
       "name": "Victor Niculae aka El Nino",
@@ -40,16 +40,16 @@
   },
   "autoload": {
     "psr-4": {
-      "vikilaboy\\activerecord\\history\\": "src"
+      "bupy7\\activerecord\\history\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "vikilaboy\\activerecord\\history\\tests\\": "tests"
+      "bupy7\\activerecord\\history\\tests\\": "tests"
     }
   },
   "scripts": {
-    "test:build": "php ./tests/functional/bin/yii --migrationPath=@vikilaboy/activerecord/history/migrations --interactive=0",
+    "test:build": "php ./tests/functional/bin/yii --migrationPath=@bupy7/activerecord/history/migrations --interactive=0",
     "test:run": "php vendor/bin/phpunit --no-coverage",
     "test:run-with-cov": "php vendor/bin/phpunit",
     "cs:fix": "./vendor/bin/php-cs-fixer fix",

@@ -1,6 +1,6 @@
 <?php
 
-namespace vikilaboy\activerecord\history\tests;
+namespace bupy7\activerecord\history\tests;
 
 use InvalidArgumentException;
 

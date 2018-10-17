@@ -1,6 +1,6 @@
 <?php
 
-namespace vikilaboy\activerecord\history\tests\functionals\assets\models;
+namespace bupy7\activerecord\history\tests\functionals\assets\models;
 
 use BadMethodCallException;
 use yii\base\Object;
