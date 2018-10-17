@@ -1,58 +1,58 @@
 {
-    "name": "vikilaboy/yii2-activerecord-history",
-    "description": "This extension adds storage history of changes to the ActiveRecord model.",
-    "type": "yii2-extension",
-    "keywords": [
-        "yii2",
-        "extension",
-        "module",
-        "activerecord",
-        "history",
-        "behavior",
-        "changes",
-        "model"
-    ],
-    "license": "BSD-3-Clause",
-    "version": "1.1.2",
-    "authors": [
-        {
-            "name": "Vasilij Belosludcev",
-            "email": "bupy765@gmail.com"
-        },
-	{
-	    "name": "Victor Niculae aka El Nino",
-	    "email": "viktorash@gmail.com"
-	}
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
-    "require": {
-        "yiisoft/yii2": "^2.0"
+  "name": "vikilaboy/yii2-activerecord-history",
+  "description": "This extension adds storage history of changes to the ActiveRecord model.",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "module",
+    "activerecord",
+    "history",
+    "behavior",
+    "changes",
+    "model"
+  ],
+  "license": "BSD-3-Clause",
+  "version": "1.1.2",
+  "authors": [
+    {
+      "name": "Vasilij Belosludcev",
+      "email": "bupy765@gmail.com"
     },
-    "require-dev": {
-        "phpunit/phpunit": ">=4.8 <6.0.0",
-        "satooshi/php-coveralls": "^1.0.1 || ^2.0",
-        "friendsofphp/php-cs-fixer": "^2.2.17"
-    },
-    "autoload": {
-        "psr-4": {
-            "bupy7\\activerecord\\history\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "bupy7\\activerecord\\history\\tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test:build": "php ./tests/functional/bin/yii --migrationPath=@bupy7/activerecord/history/migrations --interactive=0",
-        "test:run": "php vendor/bin/phpunit --no-coverage",
-        "test:run-with-cov": "php vendor/bin/phpunit",
-        "cs:fix": "./vendor/bin/php-cs-fixer fix",
-        "cs:check": "./vendor/bin/php-cs-fixer fix --dry-run --diff"
+    {
+      "name": "Victor Niculae aka El Nino",
+      "email": "viktorash@gmail.com"
     }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=4.8 <6.0.0",
+    "satooshi/php-coveralls": "^1.0.1 || ^2.0",
+    "friendsofphp/php-cs-fixer": "^2.2.17"
+  },
+  "autoload": {
+    "psr-4": {
+      "bupy7\\activerecord\\history\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "bupy7\\activerecord\\history\\tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test:build": "php ./tests/functional/bin/yii --migrationPath=@bupy7/activerecord/history/migrations --interactive=0",
+    "test:run": "php vendor/bin/phpunit --no-coverage",
+    "test:run-with-cov": "php vendor/bin/phpunit",
+    "cs:fix": "./vendor/bin/php-cs-fixer fix",
+    "cs:check": "./vendor/bin/php-cs-fixer fix --dry-run --diff"
+  }
 }
