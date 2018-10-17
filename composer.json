@@ -1,5 +1,5 @@
 {
-    "name": "bupy7/yii2-activerecord-history",
+    "name": "vikilaboy/yii2-activerecord-history",
     "description": "This extension adds storage history of changes to the ActiveRecord model.",
     "type": "yii2-extension",
     "keywords": [
@@ -18,7 +18,11 @@
         {
             "name": "Vasilij Belosludcev",
             "email": "bupy765@gmail.com"
-        }
+        },
+	{
+	    "name": "Victor Niculae aka El Nino",
+	    "email": ""
+	}
     ],
     "repositories": [
         {
