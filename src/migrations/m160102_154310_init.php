@@ -2,7 +2,7 @@
 
 use yii\db\Schema;
 use yii\db\Migration;
-use bupy7\activerecord\history\Module;
+use vikilaboy\activerecord\history\Module;
 
 class m160102_154310_init extends Migration
 {

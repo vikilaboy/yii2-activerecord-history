@@ -1,15 +1,15 @@
 <?php
 
-namespace bupy7\activerecord\history\storages;
+namespace vikilaboy\activerecord\history\storages;
 
 use Yii;
 use yii\base\BaseObject;
-use bupy7\activerecord\history\entities\History;
-use bupy7\activerecord\history\interfaces\Storage as StorageInterface;
+use vikilaboy\activerecord\history\entities\History;
+use vikilaboy\activerecord\history\interfaces\Storage as StorageInterface;
 
 /**
  * Base class of storage via which must be extends all storage classes.
- * @author Belosludcev Vasilij <https://github.com/bupy7>
+ * @author Belosludcev Vasilij <https://github.com/vikilaboy>
  * @since 1.0.0
  */
 abstract class Base extends BaseObject implements StorageInterface

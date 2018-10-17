@@ -1,15 +1,15 @@
 <?php
 
-namespace bupy7\activerecord\history\storages;
+namespace vikilaboy\activerecord\history\storages;
 
 use Yii;
-use bupy7\activerecord\history\entities\History;
-use bupy7\activerecord\history\storages\Base as BaseStorage;
-use bupy7\activerecord\history\Module;
+use vikilaboy\activerecord\history\entities\History;
+use vikilaboy\activerecord\history\storages\Base as BaseStorage;
+use vikilaboy\activerecord\history\Module;
 
 /**
  * Database storage history of changes.
- * @author Belosludcev Vasilij <https://github.com/bupy7>
+ * @author Belosludcev Vasilij <https://github.com/vikilaboy>
  * @since 1.0.0
  */
 class Database extends BaseStorage

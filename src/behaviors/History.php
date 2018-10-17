@@ -1,17 +1,17 @@
 <?php
 
-namespace bupy7\activerecord\history\behaviors;
+namespace vikilaboy\activerecord\history\behaviors;
 
 use yii\base\Behavior;
 use yii\db\BaseActiveRecord;
 use yii\base\Event;
-use bupy7\activerecord\history\Module;
-use bupy7\activerecord\history\entities\History as HistoryEntity;
+use vikilaboy\activerecord\history\Module;
+use vikilaboy\activerecord\history\entities\History as HistoryEntity;
 use yii\base\NotSupportedException;
 
 /**
  * Behavior monitoring change the field value to model and saving their in storage.
- * @author Belosludcev Vasilij <https://github.com/bupy7>
+ * @author Belosludcev Vasilij <https://github.com/vikilaboy>
  *
  * @property \yii\db\ActiveRecord owner
  *
@@ -107,7 +107,7 @@ class History extends Behavior
         $createdBy = $this->getCreatedBy();
         $createdAt = time();
 
-        /** @var \bupy7\activerecord\history\storages\Base $storage */
+        /** @var \vikilaboy\activerecord\history\storages\Base $storage */
         $storage = new $this->module->storage;
         
         switch ($event->name) {

@@ -1,12 +1,12 @@
 <?php
 
-namespace bupy7\activerecord\history\interfaces;
+namespace vikilaboy\activerecord\history\interfaces;
 
 use Yii;
 
 /**
  * Interface of storage for history of active record model.
- * @author Belosludcev Vasilij <https://github.com/bupy7>
+ * @author Belosludcev Vasilij <https://github.com/vikilaboy>
  * @since 1.0.0
  */
 interface Storage

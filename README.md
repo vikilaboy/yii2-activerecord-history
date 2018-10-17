@@ -1,12 +1,12 @@
 yii2-activerecord-history
 =========================
 
-[![Latest Stable Version](https://poser.pugx.org/bupy7/yii2-activerecord-history/v/stable)](https://packagist.org/packages/bupy7/yii2-activerecord-history)
-[![Total Downloads](https://poser.pugx.org/bupy7/yii2-activerecord-history/downloads)](https://packagist.org/packages/bupy7/yii2-activerecord-history)
-[![Latest Unstable Version](https://poser.pugx.org/bupy7/yii2-activerecord-history/v/unstable)](https://packagist.org/packages/bupy7/yii2-activerecord-history)
-[![License](https://poser.pugx.org/bupy7/yii2-activerecord-history/license)](https://packagist.org/packages/bupy7/yii2-activerecord-history)
-[![Build Status](https://travis-ci.org/bupy7/yii2-activerecord-history.svg?branch=master)](https://travis-ci.org/bupy7/yii2-activerecord-history)
-[![Coverage Status](https://coveralls.io/repos/github/bupy7/yii2-activerecord-history/badge.svg?branch=master)](https://coveralls.io/github/bupy7/yii2-activerecord-history?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/vikilaboy/yii2-activerecord-history/v/stable)](https://packagist.org/packages/vikilaboy/yii2-activerecord-history)
+[![Total Downloads](https://poser.pugx.org/vikilaboy/yii2-activerecord-history/downloads)](https://packagist.org/packages/vikilaboy/yii2-activerecord-history)
+[![Latest Unstable Version](https://poser.pugx.org/vikilaboy/yii2-activerecord-history/v/unstable)](https://packagist.org/packages/vikilaboy/yii2-activerecord-history)
+[![License](https://poser.pugx.org/vikilaboy/yii2-activerecord-history/license)](https://packagist.org/packages/vikilaboy/yii2-activerecord-history)
+[![Build Status](https://travis-ci.org/vikilaboy/yii2-activerecord-history.svg?branch=master)](https://travis-ci.org/vikilaboy/yii2-activerecord-history)
+[![Coverage Status](https://coveralls.io/repos/github/vikilaboy/yii2-activerecord-history/badge.svg?branch=master)](https://coveralls.io/github/vikilaboy/yii2-activerecord-history?branch=master)
 
 This extension adds storage history of changes to the ActiveRecord model.
 
@@ -21,13 +21,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist bupy7/yii2-activerecord-history "*"
+php composer.phar require --prefer-dist vikilaboy/yii2-activerecord-history "*"
 ```
 
 or add
 
 ```
-"bupy7/yii2-activerecord-history": "*"
+"vikilaboy/yii2-activerecord-history": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -43,7 +43,7 @@ Usage
 ```php
 'modules' => [
     'arhistory' => [
-        'class' => 'bupy7\activerecord\history\Module',
+        'class' => 'vikilaboy\activerecord\history\Module',
     ],
 ],
 ```
@@ -59,13 +59,13 @@ Name of module can be any (example: history, custom-name and etc).
 **Run migration:**
 
 ```php
-php ./yii migrate/up --migrationPath=@bupy7/activerecord/history/migrations
+php ./yii migrate/up --migrationPath=@vikilaboy/activerecord/history/migrations
 ```
 
 **Attach behavior to model:**
 
 ```php
-use bupy7\activerecord\history\behaviors\History as HistoryBehavior;
+use vikilaboy\activerecord\history\behaviors\History as HistoryBehavior;
 
 $model->attachBehavior('arHistory', HistoryBehavior::className());
 ```
@@ -78,9 +78,9 @@ Configuration
 ```php
 'modules' => [
     'arhistory' => [
-        'class' => 'bupy7\activerecord\history\Module',
+        'class' => 'vikilaboy\activerecord\history\Module',
         'tableName' => '{{%arhistory}}', // table name of saving changes of model
-        'storage' => 'bupy7\activerecord\history\storages\Database', // class name of storage for saving history of active record model
+        'storage' => 'vikilaboy\activerecord\history\storages\Database', // class name of storage for saving history of active record model
         'db' => 'db', // database connection component config or name
         'user' => 'user', // authentication component config or name
     ],
@@ -90,7 +90,7 @@ Configuration
 **Behavior configuration:**
 
 ```php
-use bupy7\activerecord\history\behaviors\History as HistoryBehavior;
+use vikilaboy\activerecord\history\behaviors\History as HistoryBehavior;
 
 $model->attachBehavior('arHistory', [
     'class' => HistoryBehavior::className(),

@@ -1,6 +1,6 @@
 <?php
 
-use bupy7\activerecord\history\tests\Env;
+use vikilaboy\activerecord\history\tests\Env;
 
 $env = Env::getInstance();
 
@@ -9,12 +9,12 @@ return [
     'basePath' => __DIR__ . '/..',
     'vendorPath' => __DIR__ . '/../../../../vendor',
     'aliases' => [
-        '@bupy7/activerecord/history' => __DIR__ . '/../../../../src',
+        '@vikilaboy/activerecord/history' => __DIR__ . '/../../../../src',
     ],
     'bootstrap' => ['arhistory'],
     'modules' => [
         'arhistory' => [
-            'class' => 'bupy7\activerecord\history\Module',
+            'class' => 'vikilaboy\activerecord\history\Module',
         ],
     ],
     'components' => [
@@ -36,7 +36,7 @@ return [
             'charset' => 'utf8',
         ],
         'user' => [
-            'identityClass' => 'bupy7\activerecord\history\tests\functionals\assets\models\User',
+            'identityClass' => 'vikilaboy\activerecord\history\tests\functionals\assets\models\User',
         ],
     ],
 ];

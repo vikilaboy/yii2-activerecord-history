@@ -1,6 +1,6 @@
 <?php
 
-namespace bupy7\activerecord\history\tests\functionals;
+namespace vikilaboy\activerecord\history\tests\functionals;
 
 use PHPUnit_Framework_TestCase;
 use yii\console\controllers\MigrateController;
@@ -8,7 +8,7 @@ use yii\di\Container;
 use yii\helpers\ArrayHelper;
 use Yii;
 use yii\web\Application;
-use bupy7\activerecord\history\tests\functionals\assets\fixtures\PostFixture;
+use vikilaboy\activerecord\history\tests\functionals\assets\fixtures\PostFixture;
 
 abstract class TestCase extends PHPUnit_Framework_TestCase
 {
@@ -54,8 +54,8 @@ abstract class TestCase extends PHPUnit_Framework_TestCase
             $migrateController->interactive = false;
             $migrateController->migrationPath = [
                 '@app/migrations',
-                '@bupy7/activerecord/history/migrations',
-                '@bupy7/activerecord/history/tests/functionals/assets/migrations',
+                '@vikilaboy/activerecord/history/migrations',
+                '@vikilaboy/activerecord/history/tests/functionals/assets/migrations',
             ];
             $migrateController->runAction('up');
 

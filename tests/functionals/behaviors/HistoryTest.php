@@ -1,13 +1,13 @@
 <?php
 
-namespace bupy7\activerecord\history\tests\functionals\behaviors;
+namespace vikilaboy\activerecord\history\tests\functionals\behaviors;
 
 use Yii;
-use bupy7\activerecord\history\tests\functionals\TestCase;
-use bupy7\activerecord\history\tests\functionals\assets\models\Post;
-use bupy7\activerecord\history\tests\functionals\assets\models\User;
+use vikilaboy\activerecord\history\tests\functionals\TestCase;
+use vikilaboy\activerecord\history\tests\functionals\assets\models\Post;
+use vikilaboy\activerecord\history\tests\functionals\assets\models\User;
 use yii\db\Query;
-use bupy7\activerecord\history\behaviors\History;
+use vikilaboy\activerecord\history\behaviors\History;
 use yii\db\Expression;
 use DateTime;
 
@@ -18,7 +18,7 @@ class HistoryTest extends TestCase
         $post = new Post();
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
         ]);
 
         $post->title = 'New Post Title';
@@ -50,7 +50,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(1);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
         ]);
 
         $post->title = 'Change Title';
@@ -79,7 +79,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(1);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
         ]);
 
         $this->assertGreaterThan(0, $post->delete());
@@ -104,7 +104,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(1);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
             'customAttributes' => [
                 'type' => function ($event, $isNewValue) {
                     if ($isNewValue) {
@@ -137,7 +137,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(1);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
             'skipAttributes' => [
                 'type',
             ],
@@ -164,7 +164,7 @@ class HistoryTest extends TestCase
         $post = new Post();
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
             'allowEvents' => [
                 History::EVENT_UPDATE,
                 History::EVENT_DELETE,
@@ -191,7 +191,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(1);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
             'allowEvents' => [
                 History::EVENT_INSERT,
                 History::EVENT_DELETE,
@@ -216,7 +216,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(1);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
             'allowEvents' => [
                 History::EVENT_INSERT,
                 History::EVENT_UPDATE,
@@ -239,7 +239,7 @@ class HistoryTest extends TestCase
         $post = Post::findOne(2);
 
         $post->attachBehavior('arhistory', [
-            'class' => 'bupy7\activerecord\history\behaviors\History',
+            'class' => 'vikilaboy\activerecord\history\behaviors\History',
             'skipAttributes' => [
                 'updated_at',
             ],
